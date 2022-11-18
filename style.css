@@ -1,12 +1,10 @@
 :root{
     --primary-color: #f86c6d
-}
+} 
 
-body{
-        width: 430px;
-        /* background-color: #131724e5; */
-    
-      }
+@media (431px <= min-width <= 1200px) {
+                      
+}
 
       /* Header CSS */
 
@@ -61,7 +59,7 @@ h1{
 .content{
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .article img{
