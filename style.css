@@ -3,7 +3,6 @@
 }
 
 body{
-        height:3500px;
         width: 430px;
         /* background-color: #131724e5; */
     
@@ -113,11 +112,18 @@ h3{
         height: 78px;
         font-family: 'Kanit', sans-serif;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         z-index: 800;
         overflow: hidden;
         box-sizing: border-box;
         white-space: nowrap;
         background-color:#131724;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999999;
 }
