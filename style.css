@@ -3,7 +3,9 @@
 } 
 
 @media (431px <= min-width <= 1200px) {
-                      
+body{
+    justify-content: flex-end;
+}
 }
 
       /* Header CSS */
@@ -59,55 +61,61 @@ h1{
 .content{
     position: relative;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 65px;
 }
 
-.article img{
-    max-width: 414px;
-    width:auto;
-    height:auto;
+.article1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+    z-index: -3;
+    position: relative;
     margin: 16px 8px;
+}
+
+.image1{
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* transition: transform 0.5s ease-in-out; */
+
 }
 
-.article{
-    position: relative;
-}
-
-.tag{
+.description{
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    bottom: 24px;
-    left: 16px;
-    z-index: 5;
+    bottom: 0;
 }
 
-h2{
-    text-transform: uppercase;
-    margin-bottom: 4px;
-    margin-right: auto;
-    background-color: #131724;
-    color: var(--primary-color);
-    padding: 2px;
+
+h4{
     font-family: 'Prompt', sans-serif;
     font-size: 0.8rem;
+    background-color: #131724;
+    color: var(--primary-color);
+    display: inline-block;
+
 }
 
-h3{
+h5{
+    font-family: 'Prompt', sans-serif;
     font-size: 1.5rem;
     color: white;
-    font-family: 'Prompt', sans-serif;
+
 }
 
+h4, h5 {
+    margin-left: 8px;
+    margin-bottom: 8px
+}
 
-/* TEST */
+/* code CSS Footer  */
 
 .bottom{
         width: 100%;
-        height: 78px;
+        height: 48px;
         font-family: 'Kanit', sans-serif;
         display: flex;
         justify-content: space-around;
@@ -117,6 +125,7 @@ h3{
         box-sizing: border-box;
         white-space: nowrap;
         background-color:#131724;
+        
 }
 
 footer{
@@ -124,4 +133,39 @@ footer{
     bottom: 0;
     width: 100%;
     z-index: 9999999;
+    margin-top: 100px;
 }
+
+.arrow{
+    color: var(--primary-color);
+}
+
+.home{
+    color: var(--primary-color);
+}
+
+.insta{
+    color: var(--primary-color);
+}
+
+.share{
+    color: var(--primary-color);
+}
+
+.user{
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+/* Test */
+
+
+
+
+
+
