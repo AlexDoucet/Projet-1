@@ -1,17 +1,66 @@
 :root{
-    --primary-color: #f86c6d
-} 
+     --primary-color: #f86c6d
+}
 
-@media (431px <= min-width <= 1200px) {
-body{
-    justify-content: flex-end;
-}
-}
+    /* .bottom{
+        width: 100%;
+        height: 48px;
+        font-family: 'Kanit', sans-serif;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 800;
+        overflow: hidden;
+        box-sizing: border-box;
+        white-space: nowrap;
+        background-color:#131724;
+        
+            } */
+
+
+    /* footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999999;
+    margin-top: 100px;
+    }
+
+    i:hover{
+    transition: all 0.3s;
+    color: white;
+    }
+
+    .arrow{
+    color: var(--primary-color);
+    }
+
+    .home{
+    color: var(--primary-color);
+    }
+
+    .insta{
+    color: var(--primary-color);
+    }
+
+    .share{
+    color: var(--primary-color);
+    }
+
+    .refresh{
+    color: var(--primary-color);
+    }
+
+    .menu{
+    display: none;
+    }*/
+
 
       /* Header CSS */
 
 header{
-    width: 100%;
+        
+        width: 100%;
         height: 78px;
         font-family: 'Kanit', sans-serif;
         display: flex;
@@ -21,60 +70,103 @@ header{
         top: 0;
         left: 0;
         z-index: 500;
-        overflow: hidden;
+      
         box-sizing: border-box;
         white-space: nowrap;
         background-color:#131724;
     }
 
-
-.title{
-    display: flex;
-    align-items: center;
-}
-
-.title h1{
-    float: left;
-    display: block;
-}
+    
+    .logo {
+        height: 100%;
+        margin-right: 10px;
+        display: flex;
+    }
+    .logo a {
+       
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .logo img {
+        height: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        
+     
+    }
 
 h1{
-    color: white;
+    color: var(--primary-color);
     font-size: 30px;
+    font-weight: 900;
     padding: 8px;
 }
 
-.logo{
-    max-width: 100%;
-    max-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo img{
-    max-width: 100%;
-    max-height: 100%;
- }
 
 /* Main CSS */
 
 .content{
     position: relative;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     margin-bottom: 65px;
 }
 
-.article1{
+.navMenu{
+    position: fixed;
+    left: 0;
+    background-color: #131724ed;
+    height: 100%;
+}
+
+li{
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin: 8px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+li a{
+    text-decoration: none;
+    color: #131724;
+    color: white;
+}
+
+li a:hover{
+    transition: all 0.3s;
+    color: var(--primary-color);
+}
+
+.articles{
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    height: 300px;
-    z-index: -3;
-    position: relative;
-    margin: 16px 8px;
+    justify-content: center;
+    margin-top: 8px;
+
 }
+
+.article1{
+    /* display: flex;
+    flex-wrap: wrap; */
+    min-width: 350px;
+    max-width: 450px;
+    height: 300px;
+    position: relative;
+    margin: 8px 8px;
+    cursor: pointer;
+}
+
+.article1:hover{
+    cursor: pointer;
+    /* height: 310px;
+    width: 460px; */
+    /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
+}
+
+
 
 .image1{
     width: 100%;
@@ -83,6 +175,8 @@ h1{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
+
+
 
 .description{
     position: absolute;
@@ -111,59 +205,74 @@ h4, h5 {
     margin-bottom: 8px
 }
 
-/* code CSS Footer  */
 
-.bottom{
-        width: 100%;
-        height: 48px;
-        font-family: 'Kanit', sans-serif;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        z-index: 800;
-        overflow: hidden;
-        box-sizing: border-box;
-        white-space: nowrap;
-        background-color:#131724;
-        
+
+@media (min-width: 768px){
+
+    .icone_burger{
+        display: none;
+    }
+
+    .menu_burger{
+        display: none;
+        transition: all 1s;
+    }
+
+    .content{
+        margin-right: 8px;
+        margin-left: auto;
+    }
+
+    .articles{
+        margin-left: 224px;
+    }
+
+    .bottom{
+        display: none;
+    }
 }
 
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 9999999;
-    margin-top: 100px;
+@media (max-width: 768px){
+
+        .title{
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .icone_burger{
+            cursor: pointer;
+            display: block;
+        }
+
+        .burger1, .burger2, .burger3{
+            border: var(--primary-color) solid 2px;
+            width: 30px;
+            margin: 8px;
+        }
+
+        .menu_burger{
+        position: fixed;
+        left: -450px;
+        background-color: #131724ed;
+        height: 100%;
+        width: 50%;
+        z-index: 9999999999;
+        padding-left: 4px;
+        padding-right: 4px;
+        transition: all 0.5s ease-in-out;
+        }
+
+        .navMenu{
+        display: none;
+    }
+    
+    .visible{
+        /* display: block; */
+        position:fixed;
+        left: 0;
+        transition: all 0.5s ease-in-out;
+    }
 }
-
-.arrow{
-    color: var(--primary-color);
-}
-
-.home{
-    color: var(--primary-color);
-}
-
-.insta{
-    color: var(--primary-color);
-}
-
-.share{
-    color: var(--primary-color);
-}
-
-.user{
-    color: var(--primary-color);
-}
-
-
-
-
-
-
-
-/* Test */
-
 
 
 

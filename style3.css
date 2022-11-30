@@ -1,0 +1,103 @@
+:root{
+    --primary-color: #f86c6d
+}
+
+header{
+        
+    width: 100%;
+    height: 78px;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 500;
+  
+    box-sizing: border-box;
+    white-space: nowrap;
+    background-color:#131724;
+}
+.logo {
+    height: 100%;
+    margin-right: 10px;
+    display: flex;
+}
+.logo a {
+   
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.logo img {
+    height: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    
+ 
+}
+
+h1{
+color: var(--primary-color);
+font-size: 30px;
+font-weight: 900;
+padding: 8px;
+}
+
+
+/* .main{
+    background-color: #131724ed;
+    width: 100%;
+} */
+
+h2{
+
+font-family: 'Urbanist', sans-serif;
+font-size: 3rem;
+color: var(--primary-color);
+text-align: center;
+padding-top: 24px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Urbanist',sans-serif;
+    font-size: 1.5rem;
+
+}
+
+label{
+    color: var(--primary-color);
+    margin-top: 16px;
+}
+
+input{
+    width: 50%;
+    margin-top: 16px;
+    border: #131724 1px solid;
+}
+
+textarea[id="message"] {
+    height: 150px;
+    resize: none;
+    width: 100%;
+    margin-top: 16px;
+    border: #131724 1px solid;
+  }
+
+  form input[type="submit"] {
+    font-family: 'Urbanist', sans-serif;
+    color: var(--primary-color);
+    background-color: #131724ed;
+    border: solid 1px #131724;
+    border-radius: 5px;
+    width: 20%;
+    height: 50px;
+}
+
