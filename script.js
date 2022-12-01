@@ -27,4 +27,3 @@ btnCompet1.addEventListener("click", function () {
 menuCompet1.classList.toggle("visible1");
 
 });
-

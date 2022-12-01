@@ -20,9 +20,22 @@ header{
         white-space: nowrap;
         background-color:#131724;
     }
+.title{
+    height: 90%;
+padding-right: 8px;;
+}
+    img{
+        height: 100%;
+    }
+
+    .user i{
+        margin-right: 8px;
+        font-size: 2rem;
+        color: var(--primary-color);
+    }
 
     
-    .logo {
+    /* .logo {
         height: 100%;
         margin-right: 10px;
         display: flex;
@@ -39,7 +52,7 @@ header{
         box-sizing: border-box;
         
      
-    }
+    } */
 
 h1{
     color: var(--primary-color);
@@ -182,9 +195,12 @@ h4, h5 {
 
 @media (min-width: 768px){
 
-    h1{
-        font-family: 'Kanit', sans-serif ;
-        font-size: 30px;
+    .title{
+        padding-left: 50px;
+    }
+
+    .user{
+        display: none;
     }
 
     li:hover{
@@ -238,14 +254,12 @@ h4, h5 {
 
 @media (max-width: 768px){
 
-    h1{
-        color: white;
-    }
+    
 
-        .title{
+        /* .title{
             text-align: center;
             font-size: 1rem;
-        }
+        } */
 
         .icone_burger{
             cursor: pointer;
