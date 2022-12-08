@@ -1,5 +1,6 @@
 :root{
-     --primary-color: #f86c6d
+     --primary-color: #f86c6d;
+     --secondary-color:#131724;
 }
 
       /* Header CSS */
@@ -18,8 +19,25 @@ header{
       
         box-sizing: border-box;
         white-space: nowrap;
-        background-color:#131724;
+        background-color:var(--secondary-color);
     }
+
+    body.light{
+        background-color: white;
+    }
+
+    body.dark{
+        background-color: var(--secondary-color);
+    }
+
+    body.dark header{
+        border-bottom:solid 1px var(--primary-color);
+
+    }
+    body.dark .navMenu{
+        border-right: solid 1px var(--primary-color);
+    }
+
 .title{
     height: 90%;
 padding-right: 8px;;
@@ -38,22 +56,23 @@ padding-right: 8px;;
         color: var(--primary-color);
     }
 
-    .center{
+    /* .center{
         background: linear-gradient(to right, #3a7bd5, #3a6073);
-        font-family: 'Urbanist',sans-serif;
+        
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         
-    }
+    } */
     .popup{
+        font-family: 'Urbanist',sans-serif;
         display: none;
         position: absolute;
         top: 300px;
         left: 50%;
         transform: translate(-50%,-50%);
-        width: 380px;
+        width: 300px;
         padding: 20px 30px;
         background: #fff;
         box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
@@ -79,7 +98,7 @@ padding-right: 8px;;
         right: 10px;
         width: 15px;
         height: 15px;
-        background: #131724 ;
+        background: var(--secondary-color) ;
         color: #eee;
         text-align: center;
         line-height: 15px;
@@ -90,7 +109,7 @@ padding-right: 8px;;
     
     .popup .form1 h2{
     text-align: center;
-    color: #131724 ;
+    color: var(--secondary-color) ;
     margin:10px 0px 20px ;
     font-size: 25px;
     
@@ -102,7 +121,13 @@ padding-right: 8px;;
     
     .popup .form1 .form1-element label {
         font-size: 14px;
-        color:#131724;
+        color:var(--secondary-color);
+        border-radius: 5px;
+    }
+
+    input:invalid{
+        border: 2px solid red;
+        border-radius: 5px;
     }
     
     .popup .form .form-element input[type="text"],
@@ -119,13 +144,13 @@ padding-right: 8px;;
     .popup .form1 .form1-element input[type="checkbox"]{
     margin-right: 5px;
     }
-    .popup .form1 .form1-element button{
+    .popup .form1 .form1-element input[type="submit"]{
         width: 100%;
         height: 40px;
         border: none;
         outline: none;
         font-size: 15px;
-        background: #131724;
+        background: var(--secondary-color);
         color: #f5f5f5;
         border-radius: 10px;
         cursor: pointer;
@@ -182,11 +207,8 @@ li{
 
 li , li a{
     text-decoration: none;
-    color: #131724;
     color: white;
 }
-
-
 
 .compet{
     cursor: pointer;
@@ -226,8 +248,7 @@ li img{
 .article1{
     /* display: flex;
     flex-wrap: wrap; */
-    min-width: 350px;
-    max-width: 450px;
+    width: 500px;
     height: 300px;
     position: relative;
     margin: 8px 8px;
@@ -262,22 +283,25 @@ li img{
 h4{
     font-family: 'Prompt', sans-serif;
     font-size: 0.8rem;
-    background-color: #131724;
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     display: inline-block;
-
+    padding: 2px;
 }
 
 h5{
     font-family: 'Prompt', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    background-color: var(--secondary-color);
+    background-size: contain;
     color: white;
-
+    padding: 0px 4px;
+    margin-bottom: 8px;
+    margin-right: 8px;
 }
 
 h4, h5 {
     margin-left: 8px;
-    margin-bottom: 8px
 }
 
 
@@ -299,6 +323,10 @@ h4, h5 {
     
     li a:hover{
         color: var(--primary-color);
+    }
+
+    .menu_compet1 li:hover{
+        color: white;
     }
 
     .icone_burger{
@@ -336,6 +364,14 @@ h4, h5 {
         margin-left: 224px;
     }
 
+    .article1:hover{
+        transform: scale(1.1, 1.1);
+        transition: all 0.5s ease-in-out;
+        z-index: 499;
+    }
+
+    .zoom
+
     .bottom{
         display: none;
     }
@@ -359,6 +395,7 @@ h4, h5 {
             border: var(--primary-color) solid 2px;
             width: 30px;
             margin: 8px;
+            border-radius: 5px;
         }
 
         .menu_burger{
@@ -382,12 +419,11 @@ h4, h5 {
         position:fixed;
         left: 0;
         transition: all 0.5s ease-in-out;
+
     }
 
- 
+    .article1{
+        width: 400px;
+        height: 250px;
+    }
 }
-
-
-
-
-

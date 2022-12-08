@@ -34,7 +34,7 @@
 
 </head>
 
-<body id="mainContainer">
+<body class ="light">
     <header>
         <div class="icone_burger">
             <div class="burger1"></div>
@@ -48,31 +48,29 @@
 
         </div>
         <div class="user"><i class="fa-solid fa-user"></i></div>
-        <div class="center">
-            <div class="popup">
-                <div class="close-btn">&times;</div>
-                <div class="form1">
-                    <h2>Log in</h2>
+        <div class="popup">
+            <div class="close-btn">&times;</div>
+            <form method="post" class="form1" name="login">
+                <h2>Log in</h2>
+                <div class="form1-element">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter email" required>
+                </div>
+                <div class="form1-element">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Enter password" required>
+                </div>
+                <div class="form1-element">
+                    <input type="checkbox">
+                    <label for="remember-me">Remember me</label>
                     <div class="form1-element">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" placeholder="Enter email">
+                        <input type="submit" value="Log in" class="submit">
                     </div>
                     <div class="form1-element">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="Enter password">
-                    </div>
-                    <div class="form1-element">
-                        <input type="checkbox" id="remember-me">
-                        <label for="remember-me">Remember me</label>
-                        <div class="form1-element">
-                            <button>Sign in</button>
-                        </div>
-                        <div class="form1-element">
-                            <a href="#">Forgot password?</a>
-                        </div>
+                        <a href="#">Forgot password?</a>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </header>
 
@@ -86,14 +84,14 @@
                     <li> News live </li>
                     <li class="compet"> Compétitions
                         <ul class="menu_compet">
-                            <li class="sous_menu"> <img src="/assets/icons8-france-48.png" alt="france"> Ligue 1</li>
-                            <li class="sous_menu"> <img src="/assets/icons8-england-circular-48.png" alt="england">
-                                Premier League</li>
-                            <li class="sous_menu"> <img src="/assets/icons8-spain-48.png" alt="spain"> Liga Santander
-                            </li>
-                            <li class="sous_menu"> <img src="/assets/icons8-italy-48.png" alt="italy"> Serie A</li>
-                            <li class="sous_menu"> <img src="/assets/icons8-germany-48.png" alt="germany"> Bundesliga
-                            </li>
+                            <a href="https://www.ligue1.fr/"><li class="sous_menu"> <img src="/assets/icons8-france-48.png" alt="france"> Ligue 1</li></a>
+                                <a href="https://www.premierleague.com/"><li class="sous_menu"> <img src="/assets/icons8-england-circular-48.png" alt="england">
+                                Premier League</li></a>
+                                <a href="https://www.laliga.com/en-GB"><li class="sous_menu"> <img src="/assets/icons8-spain-48.png" alt="spain"> Liga Santander
+                            </li></a>
+                            <a href="https://www.legaseriea.it/it"><li class="sous_menu"> <img src="/assets/icons8-italy-48.png" alt="italy"> Serie A</li>
+                                <a href="https://www.bundesliga.com/en/bundesliga"><li class="sous_menu"> <img src="/assets/icons8-germany-48.png" alt="germany"> Bundesliga
+                            </li></a>
                         </ul>
                     </li>
                     <li> <a href="https://www.fff.fr/"> Equipe de France </a> </li>
@@ -102,7 +100,7 @@
                             href="https://twitter.com/wildcodeschool"><i class="fa-brands fa-twitter"></i></a><a
                             href="https://www.facebook.com/WildCodeSchool/"><i class="fa-brands fa-facebook"></i></a>
                     </li>
-                    <li><a href="/index3.html"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+                    <li class="dark_mode">Dark mode</li>
                 </ul>
             </div>
 
@@ -113,14 +111,14 @@
                     <li>News live </li>
                     <li class="compet1"> Compétitions
                         <ul class="menu_compet1">
-                            <li class="sous_menu1"><img src="/assets/icons8-france-48.png" alt="france">Ligue 1</li>
-                            <li class="sous_menu1"><img src="/assets/icons8-england-circular-48.png"
-                                    alt="england">Premier League</li>
-                            <li class="sous_menu1"><img src="/assets/icons8-spain-48.png" alt="spain">Liga Santander
-                            </li>
-                            <li class="sous_menu1"><img src="/assets/icons8-italy-48.png" alt="italy">Serie A</li>
-                            <li class="sous_menu1"><img src="/assets/icons8-germany-48.png" alt="germany">Bundesliga
-                            </li>
+                            <a href="https://www.ligue1.fr/"><li class="sous_menu1"><img src="/assets/icons8-france-48.png" alt="france"> Ligue 1</li></a>
+                            <a href="https://www.premierleague.com/"><li class="sous_menu1"><img src="/assets/icons8-england-circular-48.png"
+                                    alt="england"> Premier League</li></a>
+                                    <a href="https://www.laliga.com/en-GB"><li class="sous_menu1"><img src="/assets/icons8-spain-48.png" alt="spain"> LaLiga
+                            </li></a>
+                            <a href="https://www.legaseriea.it/it"><li class="sous_menu1"><img src="/assets/icons8-italy-48.png" alt="italy"> Serie A</li></a>
+                            <a href="https://www.bundesliga.com/en/bundesliga"><li class="sous_menu1"><img src="/assets/icons8-germany-48.png" alt="germany"> Bundesliga
+                            </li></a>
                         </ul>
                     </li>
                     <li> <a href="https://www.fff.fr/"> Equipe de France </a> </li>
@@ -130,117 +128,123 @@
                             href="https://www.facebook.com/WildCodeSchool/"><i class="fa-brands fa-facebook"></i></a>
                     </li>
                     <li class="user1"><i class="fa-solid fa-user"></i></li>
-                    <li><a href="/index3.html"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+                    <li class="dark_mode">Dark mode</li>
 
                 </ul>
             </div>
 
 
             <div class="articles">
+
                 <div class="article1">
-                    <img class="image1" src="/assets/brasil.jpg" alt="article">
+                    <img class="image1" src="assets/portugal.jpg" alt="article">
                     <div class="description">
-                        <h4 class="title3">coupe du monde</h4>
-                        <h5 class="title4">Le Brésil, grand favori</h5>
+                        <h4 class="title3">CDM QATAR 2022</h4>
+                        <h5 class="title4">Le Portugal atomise la Suisse</h5>
                     </div>
 
                 </div>
 
                 <div class="article1">
-                    <img class="image1" src="assets/ballon.jpg" alt="article">
+                    <img class="image1" src="assets/maroc.jpg" alt="article">
                     <div class="description">
-                        <h4 class="title3">coupe du monde</h4>
-                        <h5 class="title4">Le sénégal accède au prochain tour</h5>
+                        <h4 class="title3">CDM QATAR 2022</h4>
+                        <h5 class="title4">Le Maroc au bout du suspens</h5>
                     </div>
 
                 </div>
 
                 <div class="article1">
-                    <img class="image1" src="assets/corruption.jpg" alt="article">
+                    <img class="image1" src="/assets/mbappe.jpg" alt="article">
                     <div class="description">
-                        <h4 class="title3">société</h4>
-                        <h5 class="title4">Football et corruption</h5>
+                        <h4 class="title3">CDM QATAR 2022</h4>
+                        <h5 class="title4">Mbappé brille face à la Pologne</h5>
+                    </div>
+
+                </div>
+
+
+                <div class="article1">
+                    <img class="image1" src="assets/brésil.jpg" alt="article">
+                    <div class="description">
+                        <h4 class="title3">CDM QATAR 2022</h4>
+                        <h5 class="title4">Le Brésil confiant avant son quart</h5>
                     </div>
 
                 </div>
 
                 <div class="article1">
-                    <img class="image1" src="assets/france.jpg" alt="article">
+                    <img class="image1" src="assets/england.jpg" alt="article">
                     <div class="description">
-                        <h4 class="title3">coupe du monde</h4>
-                        <h5 class="title4">La France qualifié pour les 8èmes !</h5>
+                        <h4 class="title3">CDM QATAR 2022</h4>
+                        <h5 class="title4">Un crunch au menu des quarts</h5>
                     </div>
 
                 </div>
 
                 <div class="article1">
-                    <img class="image1" src="assets/plage.jpg" alt="article">
+                    <img class="image1" src="assets/argentine.jpg" alt="article">
                     <div class="description">
-                        <h4 class="title3">société</h4>
-                        <h5 class="title4">Football et corruption Lorem ipsum dolor sit amet.</h5>
+                        <h4 class="title3">CDM QATAR 2022</h4>
+                        <h5 class="title4">Messi face à son destin</h5>
                     </div>
 
                 </div>
 
                 <div class="article1">
-                    <img class="image1" src="assets/corruption.jpg" alt="article">
+                    <img class="image1" src="assets/pays_bas.jpg" alt="article">
                     <div class="description">
-                        <h4 class="title3">société</h4>
-                        <h5 class="title4">Football et corruption Lorem ipsum dolor sit amet.</h5>
+                        <h4 class="title3">CDM QATAR 2022</h4>
+                        <h5 class="title4">Les Pays-Bas maîtrise les USA</h5>
                     </div>
 
                 </div>
 
                 <div class="article1">
-                    <img class="image1" src="assets/corruption.jpg" alt="article">
+                    <img class="image1" src="assets/senegal.webp" alt="article">
                     <div class="description">
-                        <h4 class="title3">société</h4>
-                        <h5 class="title4">Football et corruption Lorem ipsum dolor sit amet.</h5>
+                        <h4 class="title3">CDM QATAR 2022</h4>
+                        <h5 class="title4">Le Sénégal sort avec des regrets</h5>
+                    </div>
+
+                </div>
+
+
+                <div class="article1">
+                    <img class="image1" src="assets/modric.webp" alt="article">
+                    <div class="description">
+                        <h4 class="title3">CDM QATAR 2022</h4>
+                        <h5 class="title4">Modric s'exprime sur son avenir</h5>
+                    </div>
+
+                </div>
+
+
+               
+
+                <div class="article1">
+                    <img class="image1" src="assets/japon.jpg" alt="article">
+                    <div class="description">
+                        <h4 class="title3">CDM QATAR 2022</h4>
+                        <h5 class="title4">Le Japon y était presque</h5>
                     </div>
 
                 </div>
 
                 <div class="article1">
-                    <img class="image1" src="assets/corruption.jpg" alt="article">
+                    <img class="image1" src="assets/australie.jpg" alt="article">
                     <div class="description">
-                        <h4 class="title3">société</h4>
-                        <h5 class="title4">Football et corruption Lorem ipsum dolor sit amet.</h5>
+                        <h4 class="title3">CDM QATAR 2022</h4>
+                        <h5 class="title4">L'Australie à terre</h5>
                     </div>
 
                 </div>
 
                 <div class="article1">
-                    <img class="image1" src="assets/corruption.jpg" alt="article">
+                    <img class="image1" src="assets/stades.jpg" alt="article">
                     <div class="description">
-                        <h4 class="title3">société</h4>
-                        <h5 class="title4">Football et corruption Lorem ipsum dolor sit amet.</h5>
-                    </div>
-
-                </div>
-
-                <div class="article1">
-                    <img class="image1" src="assets/corruption.jpg" alt="article">
-                    <div class="description">
-                        <h4 class="title3">société</h4>
-                        <h5 class="title4">Football et corruption Lorem ipsum dolor sit amet.</h5>
-                    </div>
-
-                </div>
-
-                <div class="article1">
-                    <img class="image1" src="assets/corruption.jpg" alt="article">
-                    <div class="description">
-                        <h4 class="title3">société</h4>
-                        <h5 class="title4">Football et corruption Lorem ipsum dolor sit amet.</h5>
-                    </div>
-
-                </div>
-
-                <div class="article1">
-                    <img class="image1" src="assets/corruption.jpg" alt="article">
-                    <div class="description">
-                        <h4 class="title3">société</h4>
-                        <h5 class="title4">Football et corruption Lorem ipsum dolor sit amet.</h5>
+                        <h4 class="title3">CDM QATAR 2022</h4>
+                        <h5 class="title4">Le tour des stades</h5>
                     </div>
 
                 </div>
