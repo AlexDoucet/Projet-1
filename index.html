@@ -34,7 +34,7 @@
 
 </head>
 
-<body class ="light">
+<body class="light">
     <header>
         <div class="icone_burger">
             <div class="burger1"></div>
@@ -54,11 +54,11 @@
                 <h2>Log in</h2>
                 <div class="form1-element">
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Enter email" required>
+                    <input id="mail" type="email" name="email" placeholder="Enter email" required>
                 </div>
                 <div class="form1-element">
                     <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="Enter password" required>
+                    <input id="pass" type="password" name="password" placeholder="Enter password" required>
                 </div>
                 <div class="form1-element">
                     <input type="checkbox">
@@ -84,14 +84,26 @@
                     <li> News live </li>
                     <li class="compet"> Compétitions
                         <ul class="menu_compet">
-                            <a href="https://www.ligue1.fr/"><li class="sous_menu"> <img src="/assets/icons8-france-48.png" alt="france"> Ligue 1</li></a>
-                                <a href="https://www.premierleague.com/"><li class="sous_menu"> <img src="/assets/icons8-england-circular-48.png" alt="england">
-                                Premier League</li></a>
-                                <a href="https://www.laliga.com/en-GB"><li class="sous_menu"> <img src="/assets/icons8-spain-48.png" alt="spain"> Liga Santander
-                            </li></a>
-                            <a href="https://www.legaseriea.it/it"><li class="sous_menu"> <img src="/assets/icons8-italy-48.png" alt="italy"> Serie A</li>
-                                <a href="https://www.bundesliga.com/en/bundesliga"><li class="sous_menu"> <img src="/assets/icons8-germany-48.png" alt="germany"> Bundesliga
-                            </li></a>
+                            <a href="https://www.ligue1.fr/">
+                                <li class="sous_menu"> <img src="/assets/icons8-france-48.png" alt="france"> Ligue 1
+                                </li>
+                            </a>
+                            <a href="https://www.premierleague.com/">
+                                <li class="sous_menu"> <img src="/assets/icons8-england-circular-48.png" alt="england">
+                                    Premier League</li>
+                            </a>
+                            <a href="https://www.laliga.com/en-GB">
+                                <li class="sous_menu"> <img src="/assets/icons8-spain-48.png" alt="spain"> Liga
+                                    Santander
+                                </li>
+                            </a>
+                            <a href="https://www.legaseriea.it/it">
+                                <li class="sous_menu"> <img src="/assets/icons8-italy-48.png" alt="italy"> Serie A</li>
+                                <a href="https://www.bundesliga.com/en/bundesliga">
+                                    <li class="sous_menu"> <img src="/assets/icons8-germany-48.png" alt="germany">
+                                        Bundesliga
+                                    </li>
+                                </a>
                         </ul>
                     </li>
                     <li> <a href="https://www.fff.fr/"> Equipe de France </a> </li>
@@ -100,7 +112,11 @@
                             href="https://twitter.com/wildcodeschool"><i class="fa-brands fa-twitter"></i></a><a
                             href="https://www.facebook.com/WildCodeSchool/"><i class="fa-brands fa-facebook"></i></a>
                     </li>
-                    <li class="dark_mode">Dark mode</li>
+                    <label class="switch">
+                        <input type="checkbox" />
+                        <span class="dark"></span>
+                    </label>
+                    <li class="text_btn">Dark mode</li>
                 </ul>
             </div>
 
@@ -111,24 +127,41 @@
                     <li>News live </li>
                     <li class="compet1"> Compétitions
                         <ul class="menu_compet1">
-                            <a href="https://www.ligue1.fr/"><li class="sous_menu1"><img src="/assets/icons8-france-48.png" alt="france"> Ligue 1</li></a>
-                            <a href="https://www.premierleague.com/"><li class="sous_menu1"><img src="/assets/icons8-england-circular-48.png"
-                                    alt="england"> Premier League</li></a>
-                                    <a href="https://www.laliga.com/en-GB"><li class="sous_menu1"><img src="/assets/icons8-spain-48.png" alt="spain"> LaLiga
-                            </li></a>
-                            <a href="https://www.legaseriea.it/it"><li class="sous_menu1"><img src="/assets/icons8-italy-48.png" alt="italy"> Serie A</li></a>
-                            <a href="https://www.bundesliga.com/en/bundesliga"><li class="sous_menu1"><img src="/assets/icons8-germany-48.png" alt="germany"> Bundesliga
-                            </li></a>
+                            <a href="https://www.ligue1.fr/">
+                                <li class="sous_menu1"><img src="/assets/icons8-france-48.png" alt="france"> Ligue 1
+                                </li>
+                            </a>
+                            <a href="https://www.premierleague.com/">
+                                <li class="sous_menu1"><img src="/assets/icons8-england-circular-48.png" alt="england">
+                                    Premier League</li>
+                            </a>
+                            <a href="https://www.laliga.com/en-GB">
+                                <li class="sous_menu1"><img src="/assets/icons8-spain-48.png" alt="spain"> LaLiga
+                                </li>
+                            </a>
+                            <a href="https://www.legaseriea.it/it">
+                                <li class="sous_menu1"><img src="/assets/icons8-italy-48.png" alt="italy"> Serie A</li>
+                            </a>
+                            <a href="https://www.bundesliga.com/en/bundesliga">
+                                <li class="sous_menu1"><img src="/assets/icons8-germany-48.png" alt="germany">
+                                    Bundesliga
+                                </li>
+                            </a>
                         </ul>
                     </li>
                     <li> <a href="https://www.fff.fr/"> Equipe de France </a> </li>
                     <li class="social"><a href="http://www.instagram.com/wildcodeschoolofficial/?hl=fr"><i
                                 class="fa-brands fa-instagram insta"></i></a><a
-                            href="https://twitter.com/wildcodeschool"><i class="fa-brands fa-twitter"></i></a><a
+                            href="https://twitter.com/wildcodeschool"><i class="fa-brands fa-twitter"></i></a>
+                            <a
                             href="https://www.facebook.com/WildCodeSchool/"><i class="fa-brands fa-facebook"></i></a>
                     </li>
                     <li class="user1"><i class="fa-solid fa-user"></i></li>
-                    <li class="dark_mode">Dark mode</li>
+                    <label class="switch">
+                        <input type="checkbox" />
+                        <span class="dark"></span>
+                    </label>
+                    <li class="text_btn1">Dark mode</li>
 
                 </ul>
             </div>
@@ -220,7 +253,7 @@
                 </div>
 
 
-               
+
 
                 <div class="article1">
                     <img class="image1" src="assets/japon.jpg" alt="article">

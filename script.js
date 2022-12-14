@@ -1,6 +1,10 @@
 const btnBurger = document.querySelector(".icone_burger");
 const menuBurger = document.querySelector(".menu_burger");
 
+const userMobile = document.querySelector(".user ");
+const userDesktop = document.querySelector(".user1 i");
+ 
+
 btnBurger.addEventListener("click", function () {
 
     menuBurger.classList.toggle("visible");
@@ -39,70 +43,50 @@ document.querySelector(".user1").addEventListener("click", function(){
     document.querySelector(".popup").classList.add("active2");
 });
 
-const btnDark = document.querySelectorAll(".dark_mode");
-
+const btnDark = document.querySelectorAll(".dark");
 for(let i =0; i < btnDark.length; i++){
 
 btnDark[i].addEventListener("click", ()=>{
-    
     const body = document.body;
+    const text_btn = document.querySelector(".text_btn");
+    const text_btn1 = document.querySelector(".text_btn1")
 
     if(body.classList.contains("light")){
 
         body.classList.add("dark");
         body.classList.remove("light");
-        btnDark[i].innerHTML = "Light mode"
+        text_btn.innerHTML = "Light mode";
+        text_btn1.innerHTML = "Light mode";
+
 
     }else if(body.classList.contains("dark")){
 
         body.classList.add("light");
         body.classList.remove("dark");
-        btnDark[i].innerHTML = "Dark mode"
+        text_btn.innerHTML = "Dark mode";
+        text_btn1.innerHTML = "Dark mode";
     }
 
 })};
 
 
-
-document.forms["login"].addEventListener("submit", function(){
-
-    let inputs = this;
-    const user = document.querySelector(".user");
-
-if(inputs["email"].value === "admin@google.com" && inputs["password"].value === "admin1991"){
+const login = document.querySelector('.submit');
+const form1 = document.querySelector('.form1');
+const pass = document.querySelector('#pass');
+const mail = document.querySelector('#mail');
+login.addEventListener('click', (e)=>{
+    e.preventDefault();
+    console.log(pass.value)
+    console.log(mail.value)
+     if(mail.value === "admin@google.com" && pass.value === "admin1991"){
     
-    alert(`Bienvenue Alexandre !`);
-function removeIcon(){
+            alert(`Bienvenue Alexandre !`);
+            userDesktop.style.Color = 'green';
+        
+         }else{
+             alert("Email et/ou mot de passe invalide")
+        }
+        
+        });
 
-            const header = document.querySelector("header");
-            const user = document.querySelector(".user");
-            user.parentNode.removeChild(user)};
-
-            document.createElement("div");
-            header.appendChild("div");
-}else{
-    alert("Email et/ou mot de passe invalide")
-}
-
-});
-
-// Dark Mode //
-
-
-
-
-
-
-
-
-
-
-const focus = document.querySelectorAll(".article1");
-
-for(let i =0; i < focus.length; i++){
-
-    focus[i].addEventListener("click", function(){
-        focus[i].classList.toggle("zoom");
-
-})};
 
