@@ -1,6 +1,9 @@
 :root{
-     --primary-color: #f86c6d;
-     --secondary-color:#131724;
+     --primary-color: #97fb57;
+     --secondary-color:#121212;
+     --secondary-color1:#121212ed;
+     --third-color : #f6f2f2;
+     --fourth-color:#909090;
 }
 
       /* Header CSS */
@@ -15,7 +18,7 @@ header{
         position: sticky;
         top: 0;
         left: 0;
-        z-index: 500;
+        z-index: 5000000000000;
       
         box-sizing: border-box;
         white-space: nowrap;
@@ -23,17 +26,37 @@ header{
     }
 
     body.light{
-        background-color: white;
+        background-color: var(--third-color);
         transition: all 0.2s ease-in-out;
     }
 
     body.dark{
-        background-color: #131724ed;
+        background-color: var(--secondary-color1);
+        transition: all 0.2s ease-in-out;
+    }
+    body.dark header{
+        filter: grayscale(5%);
         transition: all 0.2s ease-in-out;
     }
 
     body.dark img{
         filter: grayscale(20%);
+        transition: all 0.2s ease-in-out;
+    }
+    body.dark li{
+color: var(--fourth-color);
+transition: all 0.2s ease-in-out;
+    }
+    body.dark a{
+color: var(--fourth-color);
+transition: all 0.2s ease-in-out;
+    }
+    body.dark h5{
+        color: var(--fourth-color);
+        transition: all 0.2s ease-in-out;
+    }
+    body.dark footer{
+        filter: grayscale(5%);
     }
 
 .title{
@@ -72,7 +95,7 @@ padding-right: 8px;;
         transform: translate(-50%,-50%);
         width: 300px;
         padding: 20px 30px;
-        background: #fff;
+        background: var(--third-color);
         box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         transition: top 0ms ease-in-out 200ms,
@@ -135,7 +158,7 @@ padding-right: 8px;;
     width: 100%;
     padding: 10px;
     outline: none;
-    border: 1px solid #aaa;
+    border: 1px solid var(--fourth-color);
     border-radius: 5px;
     }
     
@@ -148,8 +171,9 @@ padding-right: 8px;;
         border: none;
         outline: none;
         font-size: 15px;
+        font-weight: 700;
         background: var(--secondary-color);
-        color: #f5f5f5;
+        color: var(--primary-color);
         border-radius: 10px;
         cursor: pointer;
     }
@@ -161,6 +185,7 @@ padding-right: 8px;;
         color: #1a79ca;
         text-decoration: none;
         font-weight: 600;
+        margin-top: 8px;
     }
 
 
@@ -185,8 +210,9 @@ h1{
 .navMenu{
     position: fixed;
     left: 0;
-    background-color: #131724ed;
+    background-color: var(--secondary-color1);
     height: 100%;
+    z-index: 40;
 }
 .menu{
     display:flex;
@@ -213,7 +239,7 @@ li{
 
 li , li a{
     text-decoration: none;
-    color: white;
+    color: var(--third-color);
 }
 
 .compet{
@@ -253,12 +279,12 @@ transition: all 0.5s ease-in-out;
    bottom: 0;
    left: 0;
    right: 0;
-   background: white;
+   background: var(--third-color);
    border-radius: 20px;
 }
 
 .switch input:checked + span {
-	background: white;
+	background: var(--fourth-color);
 }
 
 .switch input + span:before {
@@ -282,10 +308,7 @@ transition: all 0.5s ease-in-out;
 li.text_btn{
     cursor: default;
 }
-urger
-li.text_btn:hover{
-    color: white;
-}
+
 
 li img{
     width: 1rem;
@@ -309,8 +332,6 @@ li img{
 }
 
 .article1{
-    /* display: flex;
-    flex-wrap: wrap; */
     width: 500px;
     height: 300px;
     position: relative;
@@ -320,9 +341,6 @@ li img{
 
 .article1:hover{
     cursor: pointer;
-    /* height: 310px;
-    width: 460px; */
-    /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
 }
 
 
@@ -357,7 +375,7 @@ h5{
     font-size: 1.3rem;
     background-color: var(--secondary-color);
     background-size: contain;
-    color: white;
+    color: var(--third-color);
     padding: 0px 4px;
     margin-bottom: 8px;
     margin-right: 8px;
@@ -365,6 +383,20 @@ h5{
 
 h4, h5 {
     margin-left: 8px;
+}
+
+.copyright{
+    background-color: var(--secondary-color);
+    height: 80px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-family: 'Urbanist', 'sans-serif';
 }
 
 
@@ -379,13 +411,15 @@ h4, h5 {
         display: none;
     }
 
-    li:hover{
+    .menu li:hover{
         color: var(--primary-color);
         cursor: pointer;
+        transition: all 0.2s ease-in-out;
     }
     
     li a:hover{
         color: var(--primary-color);
+        transition: all 0.2s ease-in-out;
     }
 
     li.text_btn1{
@@ -393,11 +427,11 @@ h4, h5 {
 
     }
     li.text_btn1:hover{
-        color: white;
+        color: var(--third-color);
     }
 
     .menu_compet1 li:hover{
-        color: white;
+        color: var(--third-color);
     }
 
     .icone_burger{
@@ -440,7 +474,7 @@ h4, h5 {
 }
     .article1:hover{
         transform: scale(1.05);
-        z-index: 499;
+        z-index: 0
     }
 
     .zoom
@@ -451,13 +485,6 @@ h4, h5 {
 }
 
 @media (max-width: 768px){
-
-    
-
-        /* .title{
-            text-align: center;
-            font-size: 1rem;
-        } */
 
         .icone_burger{
             cursor: pointer;
@@ -478,7 +505,7 @@ h4, h5 {
         justify-content: flex-start;
         position: fixed;
         left: -450px;
-        background-color: #131724ed;
+        background-color: var(--secondary-color1);
         height: 100%;
         width: 50%;
         z-index: 9999999999;
@@ -495,7 +522,6 @@ h4, h5 {
     }
     
     .visible{
-        /* display: block; */
         position:fixed;
         left: 0;
         transition: all 0.5s ease-in-out;
