@@ -47,6 +47,9 @@ header{
 color: var(--fourth-color);
 transition: all 0.2s ease-in-out;
     }
+    body.dark li:hover{
+        color: var(--primary-color);
+    }
     body.dark a{
 color: var(--fourth-color);
 transition: all 0.2s ease-in-out;
@@ -77,15 +80,6 @@ padding-right: 8px;;
         color: var(--primary-color);
     }
 
-    /* .center{
-        background: linear-gradient(to right, #3a7bd5, #3a6073);
-        
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        
-    } */
     .popup{
         font-family: 'Urbanist',sans-serif;
         display: none;
@@ -150,7 +144,7 @@ padding-right: 8px;;
         border: 2px solid red;
         border-radius: 5px;
     }
-    
+   
     .popup .form .form-element input[type="text"],
     .popup .form .form-element input[type="text"]{
     margin-top: 5px;
@@ -411,23 +405,47 @@ h4, h5 {
         display: none;
     }
 
-    .menu li:hover{
+    .menu,li:hover{
+        color: var(--primary-color);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    .fff:hover{
         color: var(--primary-color);
         cursor: pointer;
         transition: all 0.2s ease-in-out;
     }
     
-    li a:hover{
-        color: var(--primary-color);
-        transition: all 0.2s ease-in-out;
-    }
+    .insta:hover
+        {
+             display:inline-block;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(164deg, rgba(185,0,226,1) 12%, rgba(222,0,0,1) 62%, rgba(255,213,0,1) 100%); 
+  background-size: 100%;
+  
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text; 
+  -moz-text-fill-color: transparent;
+  transition: all 2s ease-in-out;}
+
+  .twitter:hover{
+    color: #1d9bf0;
+  }
+
+  .facebook:hover{
+    color: #385898;
+  }
 
     li.text_btn1{
         cursor: default;
 
     }
     li.text_btn1:hover{
-        color: var(--third-color);
+        color: var(--primary-color);
     }
 
     .menu_compet1 li:hover{
@@ -477,8 +495,6 @@ h4, h5 {
         z-index: 0
     }
 
-    .zoom
-
     .bottom{
         display: none;
     }
@@ -512,6 +528,28 @@ h4, h5 {
         padding-left: 4px;
         padding-right: 4px;
         transition: all 0.5s ease-in-out;
+        }
+
+        .insta1{
+            display:inline-block;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(164deg, rgba(185,0,226,1) 12%, rgba(222,0,0,1) 62%, rgba(255,213,0,1) 100%); 
+  background-size: 100%;
+  
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text; 
+  -moz-text-fill-color: transparent;
+        }
+
+        .twitter1{
+            color: #1d9bf0;
+        }
+        .facebook1{
+            color: #385898;
         }
         .menu_burger li{
             margin: 20px 0;
